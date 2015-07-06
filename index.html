@@ -8,7 +8,13 @@
 <body>
 
   <div ng-controller="Controller">
-    {{ cash | currency }}
+  	<div>
+    	{{ cash | currency }}
+    </div>
+    <div>
+    	Rate ($ per hour):
+    	<input type="number" step="0.01" ng-model="hourlyRate">
+  	</div>
   </div>
 
 </body>
